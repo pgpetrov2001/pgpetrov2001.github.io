@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MapAlbum Support</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            border-bottom: 2px solid #007AFF;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #007AFF;
+            margin-top: 30px;
+        }
+        strong {
+            color: #000;
+        }
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>MapAlbum Support</h1>
+    
+    <h2>About Loading Times</h2>
+    <p>When you select a set of albums for the first time, MapAlbum calculates clustering information for all photos with location data. This process:</p>
+    <ul>
+        <li>Usually completes quickly for most album sizes</li>
+        <li>Can take up to a minute for approximately 5,000 photos</li>
+        <li>Only happens once for each unique combination of albums</li>
+        <li>Shows a loading animation in the top right corner while processing</li>
+    </ul>
+    
+    <p>After the initial calculation, your photos will appear instantly on all subsequent app opens, even after restarting your phone or device.</p>
+    
+    <p>Loading will only occur again if:</p>
+    <ul>
+        <li>You change which albums are selected</li>
+        <li>Photos are added to or removed from your currently selected albums</li>
+    </ul>
+    
+    <p>During loading, your previous set of photos remains visible and interactive.</p>
+    
+    <h2>Known Issue</h2>
+    <p><strong>Cluster Gallery Memory Limitation:</strong> Tapping on a marker containing thousands of photos may cause the app to crash when attempting to open the gallery view. This occurs due to device memory limitations when loading very large numbers of photo thumbnails simultaneously. A fix for this issue is in development.</p>
+    
+    <h2>Contact</h2>
+    <p>For questions, feedback, or support, please email: <strong>radoslavfilipov005@gmail.com</strong></p>
+    
+    <footer>
+        <p>&copy; 2025 randp</p>
+    </footer>
+</body>
+</html>
